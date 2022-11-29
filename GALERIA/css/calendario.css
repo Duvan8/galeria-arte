@@ -1,0 +1,90 @@
+ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+.calendario{
+    text-align: center;
+    width: 300px;
+    margin-left: 5%;
+}
+.lado{
+    display: flex;
+    margin: 50px;
+}
+li{
+    text-align: right;
+}
+.empieza{
+    grid-column-start: 5;
+}
+.semana{
+    background: #ca541d;
+    font-weight: bold;
+    text-align: center;
+}
+.exp{
+    background: #ca541d;
+}
+a{
+    text-decoration: none;
+    color: rgb(13, 35, 233);
+}
+.parr{
+    display: flexbox;
+}
+.emp{
+    grid-column-start: 2;
+}
+.marzo{
+    margin-left: 40%;
+    width: 15%;
+}
+.inscri{
+    margin-left: 30%;
+}
+p{
+    text-align: center;
+    background: local #ca541d;
+    border-radius: 5px;
+}
+@media screen and (max-width:1000px){
+    .lado{
+        display: block;
+        margin: 50px;
+    }
+    .marzo{
+        width: 50%;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width:400px){
+    .calendario{
+        width: 300px;
+        margin: 0;
+    }
+    .lado{
+        display: block;
+        margin: 0;
+    }
+    .marzo{
+        width: 50%;
+        margin-left: 20%;
+    }
+    li{
+        text-align: right;
+        width: 10px;
+    }
+    .exp{
+        width: 20px;
+        text-align: center;
+        background: #ca541d;
+    }
+    .semana{
+        background: #ca541d;
+        width: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
